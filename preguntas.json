@@ -140,5 +140,32 @@
     "pregunta": "Traduci in italiano: 'El libro está sobre la mesa.'",
     "correcta": "Il libro è sulla tavola",
     "explicacion": "Ricorda l'uso della preposizione articolata 'su' + 'la' = 'sulla'."
+  },
+  {
+    "id": 16,
+    "tipo": "texto",
+    "nivel": "A1",
+    "tema": "Pronomi Personali",
+    "pregunta": "Traduci in italiano: 'Yo soy Lucas, el hermano de Marcos'",
+    "correcta": "Io sono Luca, if fratello di Marco",
+    "explicacion": "Ricorda 'Ricorda che i pronomi personali sono: io, tu, lui/lei, Lei, noi, voi, loro.'"
+  },
+  {
+    "id": 17,
+    "tipo": "texto",
+    "nivel": "A1",
+    "tema": "Pronomi Personali",
+    "pregunta": "Traduci in italiano: 'Tú eres italiano, nosotros somos ingleses'",
+    "correcta": "Tu sei italiano, noi siamo inglesi",
+    "explicacion": "Ricorda 'Ricorda che i pronomi personali sono: io, tu, lui/lei, Lei, noi, voi, loro.'"
+  },
+  {
+    "id": 18,
+    "tipo": "texto",
+    "nivel": "A1",
+    "tema": "Pronomi Personali",
+    "pregunta": "Traduci in italiano: 'Usted cuantos años tiene, señor Papini?'",
+    "correcta": "Lei quanti anni ha, signor Papini",
+    "explicacion": "Ricorda 'Ricorda che i pronomi personali sono: io, tu, lui/lei, Lei, noi, voi, loro.'"
   }
 ]
