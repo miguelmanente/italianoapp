@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Imparare l'Italiano - Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f4f6f9; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #008C45; text-align: center; } /* Verde italiano */
+        label { font-weight: bold; margin-top: 15px; display: block; }
+        select, button { width: 100%; padding: 12px; margin-top: 8px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
+        button { background-color: #CD212A; color: white; border: none; font-weight: bold; cursor: pointer; margin-top: 25px; } /* Rojo italiano */
+        button:hover { background-color: #a81921; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🇮🇹 Pratica il tuo Italiano</h1>
+        <p style="text-align: center; color: #555;">Seleziona il livello e il tema per iniziare:</p>
+        
+        <form action="/iniciar_quiz" method="POST">
+            <label for="nivel">Livello (Nivel):</label>
+            <select name="nivel" id="nivel">
+                <option value="">Tutti i livelli (Todos)</option>
+                {% for n in niveles %}
+                    <option value="{{ n }}">{{ n }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="tema">Argomento (Tema/Tiempo verbal):</label>
+            <select name="tema" id="tema">
+                <option value="">Tutti gli argomenti (Todos)</option>
+                {% for t in temas %}
+                    <option value="{{ t }}">{{ t }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Inizia il Quiz 🚀</button>
+        </form>
+    </div>
+</body>
+</html>

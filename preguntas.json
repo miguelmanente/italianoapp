@@ -1,0 +1,144 @@
+[
+  {
+    "id": 1,
+    "nivel": "A1",
+    "tema": "Presente Indicativo",
+    "pregunta": "Scegli la forma corretta del verbo 'essere': Noi ______ studenti di italiano.",
+    "opciones": ["siamo", "sono", "sei", "siete"],
+    "correcta": "siamo",
+    "explicacion": "Il verbo 'essere' al presente indicativo si coniuga così: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono."
+  },
+  {
+    "id": 2,
+    "nivel": "A1",
+    "tema": "Presente Indicativo",
+    "pregunta": "Completa con il verbo 'avere': Marco ______ due fratelli.",
+    "opciones": ["ha", "ho", "hanno", "abbiamo"],
+    "correcta": "ha",
+    "explicacion": "Per la terza persona singolare (Marco = lui) del verbo 'avere' al presente si usa 'ha'."
+  },
+  {
+    "id": 3,
+    "nivel": "A1",
+    "tema": "Presente Indicativo",
+    "pregunta": "Tutti i giorni io ______ (prendere) un caffè al bar.",
+    "opciones": ["prendo", "prendi", "prende", "prendiamo"],
+    "correcta": "prendo",
+    "explicacion": "I verbi regolari della seconda coniugazione (-ere) come 'prendere' finiscono in '-o' alla prima persona singolare (io)."
+  },
+  {
+    "id": 4,
+    "nivel": "A1",
+    "tema": "Preposizioni Articolate",
+    "pregunta": "Domani vado ______ (a + il) cinema con i miei amici.",
+    "opciones": ["al", "nel", "sul", "dal"],
+    "correcta": "al",
+    "explicacion": "La preposizione semplice 'a' unita all'articolo determinativo 'il' forma la preposizione articolata 'al'."
+  },
+  {
+    "id": 5,
+    "nivel": "A2",
+    "tema": "Passato Prossimo",
+    "pregunta": "Ieri sera io e Maria ______ al cinema.",
+    "opciones": ["siamo andati", "abbiamo andato", "siamo andate", "hanno andato"],
+    "correcta": "siamo andati",
+    "explicacion": "Il verbo 'andare' esprime movimento e richiede l'ausiliare 'essere'. Quando si usa 'essere', il participio passato concorda in genere e numero con il soggetto (io e Maria = noi maschi/misto -> andati)."
+  },
+  {
+    "id": 6,
+    "nivel": "A2",
+    "tema": "Passato Prossimo",
+    "pregunta": "Paolo ______ una pizza deliziosa a pranzo.",
+    "opciones": ["ha mangiato", "è mangiato", "ha mangiata", "è mangiata"],
+    "correcta": "ha mangiato",
+    "explicacion": "Il verbo 'mangiare' è un verbo transitivo e richiede l'ausiliare 'avere'. Con l'ausiliare 'avere' il participio passato non cambia in base al soggetto."
+  },
+  {
+    "id": 7,
+    "nivel": "A2",
+    "tema": "Passato Prossimo vs Imperfetto",
+    "pregunta": "Mentre io ______ (leggere), è arrivata una telefonata.",
+    "opciones": ["leggevo", "ho letto", "leggo", "lessi"],
+    "correcta": "leggevo",
+    "explicacion": "Si usa l'imperfetto per un'azione di sfondo in corso nel passato (durativa) interrotta da un'azione puntuale al passato prossimo ('è arrivata')."
+  },
+  {
+    "id": 8,
+    "nivel": "A2",
+    "tema": "Imperfetto",
+    "pregunta": "Da piccolo, Luca ______ (giocare) sempre al parco ogni pomeriggio.",
+    "opciones": ["giocava", "ha giocato", "gioca", "giocherà"],
+    "correcta": "giocava",
+    "explicacion": "L'imperfetto si usa per descrivere abitudini, azioni ripetute o routine nel passato ('da piccolo', 'ogni pomeriggio')."
+  },
+  {
+    "id": 9,
+    "nivel": "B1",
+    "tema": "Futuro Semplice",
+    "pregunta": "L'anno prossimo noi ______ (viaggiare) in Italia per le vacanze.",
+    "opciones": ["viaggeremo", "viaggiamo", "viaggeranno", "viaggerete"],
+    "correcta": "viaggeremo",
+    "explicacion": "Per la prima persona plurale (noi) al futuro semplice, i verbi in '-are' cambiano la vocale in 'e' e prendono la desinenza '-remo' (viaggeremo)."
+  },
+  {
+    "id": 10,
+    "nivel": "B1",
+    "tema": "Congiuntivo Presente",
+    "pregunta": "Penso che Marco ______ (essere) una persona molto simpatica.",
+    "opciones": ["sia", "è", "sarebbe", "fosse"],
+    "correcta": "sia",
+    "explicacion": "I verbi che esprimono un'opinione personale o un pensiero ('pensare che', 'credere che') richiedono l'uso del congiuntivo presente."
+  },
+  {
+    "id": 11,
+    "nivel": "B1",
+    "tema": "Congiuntivo Presente",
+    "pregunta": "È necessario che voi ______ (studiare) le regole grammaticali.",
+    "opciones": ["studiate", "studiate", "studiate", "studiate"],
+    "correcta": "studiate",
+    "explicacion": "Le espressioni impersonali come 'è necessario che' richiedono il congiuntivo. Per la seconda persona plurale (voi) del congiuntivo presente la forma è 'studiate'."
+  },
+  {
+    "id": 12,
+    "nivel": "B1",
+    "tema": "Condizionale Semplice",
+    "pregunta": "Al tuo posto, io non ______ (fare) quella scelta.",
+    "opciones": ["farei", "farò", "faccia", "facessi"],
+    "correcta": "farei",
+    "explicacion": "Il condizionale semplice si usa per esprimere consigli o ipotesi. Per il verbo 'fare' alla prima persona (io) la forma corretta è 'farei'."
+  },
+
+  {
+    "id": 13,
+    "nivel": "A1",
+    "tema": "Vocabolario - Cibo",
+    "pregunta": "Come si chiama questo piatto tipico italiano?",
+    "imagen_pregunta": "imagen/pizza.jpg",
+    "opciones": ["La pizza", "Il gelato", "La pasta", "Il pane"],
+    "correcta": "La pizza",
+    "explicacion": "La pizza è uno dei piatti più famosi della cucina italiana."
+  },
+  {
+    "id": 14,
+    "nivel": "A1",
+    "tema": "Vocabolario - Mezzi di Trasporto",
+    "pregunta": "Quale tra queste immagini rappresenta 'la macchina'?",
+    "opciones_imagen": [
+      {"texto": "La macchina", "imagen": "imagen/macchina.jpg"},
+      {"texto": "Il treno", "imagen": "imagen/treno.jpg"},
+      {"texto": "L'aereo", "imagen": "imagen/aereo.jpg"},
+      {"texto": "La bicicletta", "imagen": "imagen/bici.jpg"}
+    ],
+    "correcta": "La macchina",
+    "explicacion": "'La macchina' significa 'el auto/coche' in italiano."
+  },
+  {
+    "id": 15,
+    "tipo": "texto",
+    "nivel": "A2",
+    "tema": "Frasi e Traduzione",
+    "pregunta": "Traduci in italiano: 'El libro está sobre la mesa.'",
+    "correcta": "Il libro è sulla tavola",
+    "explicacion": "Ricorda l'uso della preposizione articolata 'su' + 'la' = 'sulla'."
+  }
+]

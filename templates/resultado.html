@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Risultato - Quiz Italiano</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f4f6f9; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .marcador { display: flex; justify-content: space-between; background: #f8f9fa; padding: 10px 15px; border-radius: 6px; margin: 15px 0; font-weight: bold; font-size: 14px; }
+        .punti-ok { color: #008C45; }
+        .punti-no { color: #CD212A; }
+        .correcto { color: #008C45; font-size: 24px; font-weight: bold; }
+        .incorrecto { color: #CD212A; font-size: 24px; font-weight: bold; }
+        .explicacion { background: #f0f7ff; border-left: 4px solid #008C45; padding: 15px; margin: 20px 0; border-radius: 4px; }
+        .btn { display: inline-block; width: 100%; text-align: center; padding: 12px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; box-sizing: border-box; }
+        .btn-sig { background-color: #008C45; color: white; }
+        .btn-inicio { background-color: #6c757d; color: white; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        {% if es_correcta %}
+            <div class="correcto">¡Esatto! 🎉</div>
+            <p>Hai scelto: <strong>{{ opcion_elegida }}</strong></p>
+        {% else %}
+            <div class="incorrecto">Non è corretto ❌</div>
+            <p>La tua risposta: <s>{{ opcion_elegida }}</s></p>
+            <p>Risposta corretta: <strong>{{ pregunta.correcta }}</strong></p>
+        {% endif %}
+
+        <!-- Marcador actualizado -->
+        <div class="marcador">
+            <span class="punti-ok">✅ Corrette: {{ correctas }}</span>
+            <span class="punti-no">❌ Sbagliate: {{ incorrectas }}</span>
+        </div>
+
+        <div class="explicacion">
+            <strong>💡 Spiegazione Grammaticale:</strong><br>
+            <p style="margin-top: 8px;">{{ pregunta.explicacion }}</p>
+        </div>
+
+        <a href="/pregunta" class="btn btn-sig" style="display:block; margin-bottom:10px;">Prossima Domanda ➡️</a>
+        <a href="/" class="btn btn-inicio" style="display:block;">Cambia Livello/Tema ⚙️</a>
+    </div>
+</body>
+</html>

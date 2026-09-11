@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Completato - Italiano</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f4f6f9; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #008C45; }
+        .resumen { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; font-size: 18px; }
+        .btn { display: inline-block; width: 100%; text-align: center; padding: 12px; border-radius: 5px; text-decoration: none; font-weight: bold; background-color: #008C45; color: white; box-sizing: border-box; }
+        .btn:hover { background-color: #006b34; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🏆 Complimenti!</h1>
+        <p>Hai completato tutte le domande disponibili per questo argomento.</p>
+
+        <div class="resumen">
+            <p><strong>Risultato Finale:</strong></p>
+            <p style="color: #008C45;">✅ Corrette: {{ correctas }} / {{ total }}</p>
+            <p style="color: #CD212A;">❌ Sbagliate: {{ incorrectas }} / {{ total }}</p>
+        </div>
+
+        <a href="/" class="btn">Ricomincia o Cambia Argomento 🔄</a>
+    </div>
+</body>
+</html>
