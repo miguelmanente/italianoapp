@@ -132,15 +132,21 @@
     "correcta": "La macchina",
     "explicacion": "'La macchina' significa 'el auto/coche' in italiano."
   },
+
   {
     "id": 15,
     "tipo": "texto",
-    "nivel": "A2",
-    "tema": "Frasi e Traduzione",
-    "pregunta": "Traduci in italiano: 'El libro está sobre la mesa.'",
-    "correcta": "Il libro è sulla tavola",
-    "explicacion": "Ricorda l'uso della preposizione articolata 'su' + 'la' = 'sulla'."
+    "nivel": "A1",
+    "tema": "Preposizioni Articolate",
+    "pregunta": "Traduci in italiano: El libro está sobre la mesa",
+    "correcta": "Il libro è sul tavolo",
+    "explicacion": [
+        "Ricorda: l'uso della preposizione articolata : <br><br>",
+        "Il tavolo (masculino): Se refiere al mueble en sí mismo, como objeto físico o elemento de decoración,(la mesa de trabajo, el escritorio, la mesa del comedor) e usiamo la preposizione articolata 'su' + 'il' = 'sul'.<br><br>",
+        "La tavola (femenino): Hace referencia a la mesa preparada para comer (la mesa puesta) o a la comida en sí misma (ej. a tavola! / ¡a comer!). Si dices sulla tavola, la frase evoca que el libro está sobre la mesa de comer que ya está servida o lista para la comida e usiamo la preposizione articolata 'su' + 'la' = 'sulla'"
+      ]
   },
+
   {
     "id": 16,
     "tipo": "texto",

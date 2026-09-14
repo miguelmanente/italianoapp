@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <title>Domanda - Quiz Italiano</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f4f6f9; }
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f4f6f9; }
         .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .badge { background: #e0e0e0; padding: 5px 10px; border-radius: 15px; font-size: 12px; font-weight: bold; color: #333; margin-right: 5px; }
         .marcador { display: flex; justify-content: space-between; background: #f8f9fa; padding: 10px 15px; border-radius: 6px; margin: 15px 0; font-weight: bold; font-size: 14px; }
+        
         .pregunta { font-size: 18px; font-weight: bold; margin: 20px 0; color: #1a1a1a; }
         
+        /* ESTILOS PARA EL TOOLTIP (CARTELITO FLOTANTE) */
+        .tooltip-palabra {
+            position: relative;
+            display: inline-block;
+            color: #008C45;
+            font-weight: bold;
+            border-bottom: 2px dashed #008C45;
+            cursor: pointer;
+        }
+
+        .tooltip-palabra .tooltip-caja {
+            visibility: hidden;
+            width: 220px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: left;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.4;
+            position: absolute;
+            z-index: 10;
+            bottom: 125%; 
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip-palabra .tooltip-caja::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #2c3e50 transparent transparent transparent;
+        }
+
+        .tooltip-palabra:hover .tooltip-caja {
+            visibility: visible;
+            opacity: 1;
+        }
+
         .img-pregunta { width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 10px 0; }
         .grid-opciones { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; }
         .opcion-card { background: #f9f9f9; padding: 10px; border-radius: 8px; border: 1px solid #ddd; text-align: center; cursor: pointer; }
@@ -19,7 +67,6 @@
         .opcion { display: block; background: #f9f9f9; padding: 12px; margin: 10px 0; border-radius: 6px; border: 1px solid #ddd; cursor: pointer; }
         .opcion:hover { background: #eef5ff; border-color: #008C45; }
         
-        /* Estilo para el campo de texto de escritura */
         .input-texto { width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; margin-top: 8px; }
         .input-texto:focus { border-color: #008C45; outline: none; }
 
@@ -39,7 +86,8 @@
             <span style="color: #CD212A;">❌ Sbagliate: {{ incorrectas }}</span>
         </div>
 
-        <div class="pregunta">{{ pregunta.pregunta }}</div>
+        <!-- AQUÍ ESTÁ EL CAMBIO CLAVE: Usa | safe y aparece una sola vez -->
+        <div class="pregunta">{{ pregunta.pregunta | safe }}</div>
 
         {% if pregunta.imagen_pregunta %}
             <img src="{{ url_for('static', filename=pregunta.imagen_pregunta) }}" class="img-pregunta" alt="Imagen pregunta">
@@ -48,10 +96,7 @@
         <form action="/responder" method="POST">
             <input type="hidden" name="pregunta_id" value="{{ pregunta.id }}">
 
-            <!-- AQUÍ COMIENZA EL EVALUADOR DE TIPO DE PREGUNTA -->
-            
             {% if pregunta.tipo == 'texto' %}
-                <!-- OPCIÓN A: Campo de texto para escribir la respuesta -->
                 <div style="margin: 20px 0;">
                     <label for="input-respuesta" style="display:block; font-weight: bold; color: #333;">
                         Scrivi la tua risposta in italiano:
@@ -65,8 +110,17 @@
                            required>
                 </div>
 
+            {% if pregunta.explicacion is iterable and pregunta.explicacion is not string %}
+                <ul class="lista-explicacion">
+                    {% for linea in pregunta.explicacion %}
+                        <li>{{ linea | safe }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="explicacion">{{ pregunta.explicacion | safe }}</p>
+            {% endif %}
+
             {% elif pregunta.opciones_imagen %}
-                <!-- OPCIÓN B: Grilla de opciones con imágenes -->
                 <div class="grid-opciones">
                     {% for op in pregunta.opciones_imagen %}
                         <label class="opcion-card">
@@ -77,7 +131,6 @@
                 </div>
 
             {% else %}
-                <!-- OPCIÓN C: Botones de radio con texto simple -->
                 {% for op in pregunta.opciones %}
                     <label class="opcion">
                         <input type="radio" name="opcion" value="{{ op }}" required> {{ op }}
