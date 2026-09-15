@@ -124,12 +124,12 @@
     "tema": "Vocabolario - Mezzi di Trasporto",
     "pregunta": "Quale tra queste immagini rappresenta 'la macchina'?",
     "opciones_imagen": [
-      {"texto": "La macchina", "imagen": "imagen/macchina.jpg"},
-      {"texto": "Il treno", "imagen": "imagen/treno.jpg"},
-      {"texto": "L'aereo", "imagen": "imagen/aereo.jpg"},
-      {"texto": "La bicicletta", "imagen": "imagen/bici.jpg"}
+      {"texto": "Auto", "imagen": "imagen/macchina.jpg"},
+      {"texto": "Tren", "imagen": "imagen/treno.jpg"},
+      {"texto": "Avión", "imagen": "imagen/aereo.jpg"},
+      {"texto": "Bicicleta", "imagen": "imagen/bici.jpg"}
     ],
-    "correcta": "La macchina",
+    "correcta": "Auto",
     "explicacion": "'La macchina' significa 'el auto/coche' in italiano."
   },
 
@@ -173,5 +173,119 @@
     "pregunta": "Traduci in italiano: 'Usted cuantos años tiene, señor Papini?'",
     "correcta": "Lei quanti anni ha, signor Papini",
     "explicacion": "Ricorda 'Ricorda che i pronomi personali sono: io, tu, lui/lei, Lei, noi, voi, loro.'"
+  },
+  {
+    "id": 19,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Vai a roma questo fine settimana?",
+    "opciones":["Sì, ci vado", "Sì, ci vado questo fine settimana", "No, non ci vado questo fine settimana", "No, non ci vado", "Todas", "Ninguna"],
+    "correcta": "Todas",
+    "explicacion": [
+    "Esta particula se usa para reemplazar una parte de la frase, cumple principalmente dos funciones clave: reemplazar un lugar (adverbio de lugar) o reemplazar una idea o cosa introducida por ciertas preposiciones.<br><br>",
+    "Para reemplazar un LUGAR (Significa 'allí' o 'allá`). Este es su uso más común. Se utiliza para no repetir un lugar que ya se mencionó en la conversación. Reemplaza a expresiones como a ese lugar, en ese lugar, por ese lugar, etc."
+    ]
+  },
+  {
+    "id": 20,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Siete già stati in quel ristorante?",
+    "opciones":["No, non ci siamo mai stati", "No, non ci siamo stati", "Sì, ci siamo già stati", "Sì, ci siamo stati", "Todas", "Ninguna"],
+    "correcta": "Todas",
+    "explicacion": [
+    "Esta particula se usa para reemplazar una parte de la frase, cumple principalmente dos funciones clave: reemplazar un lugar (adverbio de lugar) o reemplazar una idea o cosa introducida por ciertas preposiciones.<br><br>",
+    "Para reemplazar un LUGAR (Significa 'allí' o 'allá`). Este es su uso más común. Se utiliza para no repetir un lugar que ya se mencionó en la conversación. Reemplaza a expresiones como a ese lugar, en ese lugar, por ese lugar, etc."
+    ]
+  },  
+  {
+    "id": 21,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br>  Quali mezzi di trasporto mi portano all'aeroporto?",
+    "opciones":["Sì, il bus e il treno ci portano", "Sì, ci ti porta il taxi.", "No, la metropolitana non ci porta", "No, questi autobus non ci vanno", "Todas", "Ninguna"],
+    "correcta": "Todas",
+    "explicacion": [
+    "Esta particula se usa para reemplazar una parte de la frase, cumple principalmente dos funciones clave: reemplazar un lugar (adverbio de lugar) o reemplazar una idea o cosa introducida por ciertas preposiciones.<br><br>",
+    "La posición natural del pronombre va antes del verbo conjugado ('ci puoi arrivare')"
+    ]
+  },
+    {
+    "id": 22,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Sei a casa adesso? ",
+    "opciones":["Sì, ci sono adesso", "Sì, ci sono le case", "No, non ci case adesso","Todas", "Ninguna"],
+    "correcta": "Sì, ci sono adesso",
+    "explicacion": [
+    "Esta particula se usa para reemplazar una parte de la frase, cumple principalmente dos funciones clave: reemplazar un lugar (adverbio de lugar) o reemplazar una idea o cosa introducida por ciertas preposiciones.<br><br>",
+    "La posición natural del pronombre va antes del verbo conjugado ('ci puoi arrivare')"
+    ]
+  },
+  {
+    "id": 23,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Andate al parco dopo la palestra? ",
+    "opciones":["Sì, ci andiamo dopo la palestra", "No, non ci riesco dopo la palestra", "Sì, ci sono nella gelateria già"],
+    "correcta": "Sì, ci andiamo dopo la palestra",
+    "explicacion": [
+    ""
+    ]
+  },
+  {
+    "id": 24,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Riesci a finire questo progetto oggi? ",
+    "opciones":["No, non ci riesco oggi", "No, non ci riesco dopo la palestra", "Sì, ci sono oggi"],
+    "correcta": "No, non ci riesco oggi",
+    "explicacion": [
+    ""
+    ]
+  },
+  {
+    "id": 25,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Sei già stato in Italia?",
+    "opciones":["Sì, ci sono già stato", "No, non ci sono riesco", "Sì, ci sono vanno oggi"],
+    "correcta": "Sì, ci sono già stato",
+    "explicacion": [
+    ""
+    ]
+  },
+  {
+    "id": 26,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Credi alla mia storia?",
+    "opciones":["No, non ci credo", "No, non ci sono credo", "Sì, ci sono credo oggi"],
+    "correcta": "No, non ci credo",
+    "explicacion": [
+    ""
+    ]
+  },
+  {
+    "id": 27,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Tornate a casa a mezzogiorno?",
+    "opciones":["Sì, ci torniamo a mezzogiorno", "No, non ci sono a pomeriggio", "Sì, ci riesco a mezzogiorno"],
+    "correcta": "Sì, ci torniamo a mezzogiorno",
+    "explicacion": [
+    ""
+    ]
+  },
+    {
+    "id": 28,
+    "nivel": "A2",
+    "tema": "Particella ci",
+    "pregunta": "Scegli l'opzione corretta della frase seguente: <br><br> Vai al supermercato di sera?",
+    "opciones":["Sì, ci vado di sera", "Sì, ci vado di notte", "Sì, ci vado a mezzogiorno"],
+    "correcta": "Sì, ci vado di sera",
+    "explicacion": [
+    ""
+    ]
   }
 ]

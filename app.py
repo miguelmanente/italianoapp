@@ -78,17 +78,26 @@ def ver_pregunta():
 @app.route('/responder', methods=['POST'])
 def responder():
     pregunta_id = int(request.form.get('pregunta_id'))
-    # .strip() elimina espacios accidentales al inicio o final
     opcion_elegida = request.form.get('opcion', '').strip()
 
     preguntas = cargar_preguntas()
     pregunta = next((p for p in preguntas if p['id'] == pregunta_id), None)
 
-    # Comparación tolerante a mayúsculas/minúsculas
-    respuesta_usuario = opcion_elegida.lower()
-    respuesta_correcta = pregunta['correcta'].strip().lower()
+    # Si no se encuentra la pregunta, podés manejar el error o redirigir
+    if not pregunta:
+        return "Pregunta no encontrada", 404
 
-    es_correcta = (respuesta_usuario == respuesta_correcta)
+    respuesta_usuario = opcion_elegida.lower()
+
+    # Normalizamos respuestas_validas para aceptar tanto lista como string
+    val_correcta = pregunta.get('correcta', [])
+    if isinstance(val_correcta, list):
+        respuestas_validas = [r.strip().lower() for r in val_correcta]
+    else:
+        respuestas_validas = [val_correcta.strip().lower()]
+
+    # Evaluamos si la respuesta del usuario está entre las opciones válidas
+    es_correcta = respuesta_usuario in respuestas_validas
 
     if es_correcta:
         session['correctas'] = session.get('correctas', 0) + 1
